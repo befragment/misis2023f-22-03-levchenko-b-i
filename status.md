@@ -1,5 +1,4 @@
 OK: file codeforces.id is correct
-ERROR: folder misis2023f-22-03-levchenko-b-i/prj.codeforces is absent
-ERROR: file CMakeLists.txt is absent
-ERROR: file prj.codeforces/CMakeLists.txt is absent
+CHECK: 20231128-213544
+ERROR: invalid file name 750a
 ERROR: CMake generator failed
