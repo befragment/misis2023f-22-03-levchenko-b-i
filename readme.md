@@ -57,4 +57,8 @@ ___
 
 <h2>2. Написание CMake скрипта, для последующего его включения в модуль FetchContent</h2>
 
+```cmake
+set(FULL_SYSTEM_NAME «${ARCHITECTURE}-${OPERATING_SYSTEM}")
+```
+
 https://github.com/bintest2023
