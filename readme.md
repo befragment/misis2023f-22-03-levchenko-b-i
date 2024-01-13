@@ -53,4 +53,8 @@ static std::string extractMethod(std::string& s);
 
 <p>Метод, с помощью которого мы получаем название метода из возвращенного значения из excractMethod ( находит подстроку между `::` и `(` ). </p>
 
+___
+
+<h2>Написание CMake скрипта, для последующего его включения в модуль *FetchContent*</h2>
+
 https://github.com/bintest2023
