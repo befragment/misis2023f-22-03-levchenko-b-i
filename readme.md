@@ -65,15 +65,19 @@ set(FULL_SYSTEM_NAME «${ARCHITECTURE}-${OPERATING_SYSTEM}")
 
 ___
 
-<p>2.2 Проверка на наличие тестового файла на клиенте.</p>
+<p>2.2 Проверка на наличие тестового файла на клиенте, загрузка бинарного файла с тестами и main.cpp.o с кастомными репортами</p>
 
 ```cmake
-if(EXISTS ${destination})
-    message("-- ${binary_file} has been already downloaded")
-else()
-    file(DOWNLOAD ${file_url} ${destination} STATUS status)
-    list(APPEND download_binaries ${destination})
-endif()
+set(main_file_url "${bintest}/test-binaries/raw/main/${FULL_SYSTEM_NAME}/main.cpp.o")
+    set(main_destination "${CMAKE_CURRENT_SOURCE_DIR}/objective/main.cpp.o")
+
+    # checking if required main_binary file exists otherwise we download it from git
+    if(EXISTS ${main_destination})
+        message("-- ${binary_file} has been already downloaded")
+    else()
+        file(DOWNLOAD ${main_file_url} ${main_destination} STATUS status)
+        list(APPEND download_binaries ${main_destination})
+    endif()
 ```
 
 ___
