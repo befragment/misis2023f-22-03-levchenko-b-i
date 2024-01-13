@@ -14,7 +14,8 @@ public:
     static void create_test_api_files(std::string& text_file);
 };
 ```
-1.1
+<p>Метод create_test_api_files</p>
+
 ```cpp
 static void create_test_api_files(std::string& text_file);
 ```
