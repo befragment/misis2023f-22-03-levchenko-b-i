@@ -55,6 +55,6 @@ static std::string extractMethod(std::string& s);
 
 ___
 
-<h2>2. Написание CMake скрипта, для последующего его включения в модуль *FetchContent*</h2>
+<h2>2. Написание CMake скрипта, для последующего его включения в модуль FetchContent</h2>
 
 https://github.com/bintest2023
