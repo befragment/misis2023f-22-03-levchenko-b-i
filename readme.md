@@ -83,5 +83,4 @@ endif()
 ___
 
 
-
-https://github.com/bintest2023
+<h3>Ссылка на организацию bintest: https://github.com/bintest2023</h3>
