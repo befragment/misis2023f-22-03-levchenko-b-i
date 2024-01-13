@@ -69,7 +69,7 @@ ___
 <p>2.1. Определение архитектуры и операционной системы пользователя </p>
 
 ```cmake
-set(FULL_SYSTEM_NAME «${ARCHITECTURE}-${OPERATING_SYSTEM}")
+set(FULL_SYSTEM_NAME "${ARCHITECTURE}-${OPERATING_SYSTEM}")
 ```
 
 ___
