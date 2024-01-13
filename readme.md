@@ -2,7 +2,7 @@
 
 <h2>Написание класса TestAPICreator</h2>
 ---
-<p> Класс TestAPICreator содержит методы, предназначенные для создания TestAPI файлов. </p>
+<p> 1. Класс TestAPICreator содержит методы, предназначенные для создания TestAPI файлов. </p>
 
 ```cpp
 class TestAPICreator {
