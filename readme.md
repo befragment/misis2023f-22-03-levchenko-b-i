@@ -2,7 +2,7 @@
 
 <h2>1. Написание класса TestAPICreator</h2>
 
-<p>Класс TestAPICreator содержит методы, предназначенные для создания TestAPI файлов. </p>
+<p>1.1 Класс TestAPICreator содержит методы, предназначенные для создания TestAPI файлов. </p>
 
 ```cpp
 class TestAPICreator {
@@ -16,7 +16,7 @@ public:
 ```
 ___
 
-<p>Метод create_test_api_files</p>
+<p>1.2. Метод create_test_api_files</p>
 
 ```cpp
 static void create_test_api_files(std::string& text_file);
@@ -26,7 +26,7 @@ static void create_test_api_files(std::string& text_file);
 
 ___
 
-<p> Метод extractMethod
+<p>1.3. Метод extractMethod
 
 ```cpp
 static std::string extractMethod(std::string& s);
@@ -36,7 +36,7 @@ static std::string extractMethod(std::string& s);
 
 ___
 
-<p>Метод extractFunctionName</p>
+<p>1.4. Метод extractFunctionName</p>
 
 ```cpp
 static std::string extractFunctionName(const std::string& input);
@@ -45,7 +45,7 @@ static std::string extractFunctionName(const std::string& input);
 
 ___
 
-<p>Метод extractBetween</p>
+<p>1.5. Метод extractBetween</p>
 
 ```cpp
 static std::string extractMethod(std::string& s);
@@ -57,8 +57,27 @@ ___
 
 <h2>2. Написание CMake скрипта, для последующего его включения в модуль FetchContent</h2>
 
+<p>2.1. Определение архитектуры и операционной системы пользователя </p>
+
 ```cmake
 set(FULL_SYSTEM_NAME «${ARCHITECTURE}-${OPERATING_SYSTEM}")
 ```
+
+___
+
+<p>2.2 Проверка на наличие тестового файла на клиенте.</p>
+
+```cmake
+if(EXISTS ${destination})
+    message("-- ${binary_file} has been already downloaded")
+else()
+    file(DOWNLOAD ${file_url} ${destination} STATUS status)
+    list(APPEND download_binaries ${destination})
+endif()
+```
+
+___
+
+
 
 https://github.com/bintest2023
