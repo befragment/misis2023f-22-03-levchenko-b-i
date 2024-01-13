@@ -43,6 +43,12 @@ static std::string extractFunctionName(const std::string& input);
 ```
 <p>Метод, с помощью которого мы получаем название функции из ее объявления.</p>
 
-<p>
+<p>Метод extractBetween</p>
+
+```cpp
+static std::string extractMethod(std::string& s);
+```
+
+<p>Метод, с помощью которого мы получаем название метода из возвращенного значения из excractMethod ( находит подстроку между `::` и `(` ). </p>
 
 https://github.com/bintest2023
