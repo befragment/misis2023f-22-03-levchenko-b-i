@@ -83,7 +83,4 @@ endif()
 ___
 <h2>3. Подготовка и модификация тестов, написанных с помощью doctest для библиотек из второго семестра, а именно, rational, matrixs, arrayd, arrayt</h2>
 
-___
-
-
 <h3>Ссылка на организацию bintest: https://github.com/bintest2023</h3>
