@@ -16,4 +16,6 @@ if (BUILD_WITH_CODEFORCES)
     add_subdirectory(prj.codeforces)
 endif()
 
+add_executable(cw main.cpp creating.cpp creating.hpp)
+
 add_subdirectory(prj.cw)
