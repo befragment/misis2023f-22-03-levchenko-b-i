@@ -43,6 +43,8 @@ static std::string extractFunctionName(const std::string& input);
 ```
 <p>Метод, с помощью которого мы получаем название функции из ее объявления.</p>
 
+___
+
 <p>Метод extractBetween</p>
 
 ```cpp
