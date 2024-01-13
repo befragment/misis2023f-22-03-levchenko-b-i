@@ -3,7 +3,7 @@
 <h2>Написание класса TestAPICreator</h2>
 ---
 <p> Класс TestAPICreator содержит методы, предназначенные для создания TestAPI файлов. </p>
-```c++
+```cpp
 class TestAPICreator {
 private:
     static std::string extractFunctionName(const std::string& input);
