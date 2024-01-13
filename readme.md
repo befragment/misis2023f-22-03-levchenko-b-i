@@ -29,7 +29,7 @@ ___
 <p> Метод extractMethod
 
 ```cpp
-static std::string extractMethod(std::string& s)
+static std::string extractMethod(std::string& s);
 ```
 
 <p>Метод, принимающий на вход название пользовательское объявление. Возвращает пустую строку, если она содержит функцию. Если же содержит метод, возвращает ИмяКласса::названиеМетода. </p>
@@ -37,6 +37,7 @@ static std::string extractMethod(std::string& s)
 ___
 
 <p>Метод extractFunctionName</p>
+
 ```cpp
 static std::string extractFunctionName(const std::string& input);
 ```
